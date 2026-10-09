@@ -1,0 +1,124 @@
+{
+  "message": {
+    "type": "end-of-call-report",
+    "timestamp": "2026-01-17T04:15:23.000Z",
+    "endedReason": "customer-ended-call",
+    "call": {
+      "id": "call-demo-0001-burning-panel",
+      "type": "inboundPhoneCall",
+      "startedAt": "2026-01-17T04:14:05.000Z",
+      "endedAt": "2026-01-17T04:15:23.000Z",
+      "customer": {
+        "number": "+16125550142"
+      }
+    },
+    "customer": {
+      "number": "+16125550142"
+    },
+    "phoneNumber": {
+      "number": "+16125550100",
+      "name": "Cavern Electrical after-hours line"
+    },
+    "startedAt": "2026-01-17T04:14:05.000Z",
+    "endedAt": "2026-01-17T04:15:23.000Z",
+    "durationSeconds": 77.8,
+    "artifact": {
+      "transcript": "AI: Thanks for calling Cavern Electrical. You've reached our after-hours line. I'm an automated assistant and this call is recorded so the team can follow up. What's going on tonight?\nUser: Hi, yeah, there's a burning smell coming from our breaker panel in the garage. It's kind of a hot plastic smell.\nAI: Thanks for telling me. If you see smoke or flames, please leave the house and call 911 first. Is anyone in danger right now?\nUser: No smoke that I can see, but the panel door feels warm and the smell is getting stronger.\nAI: Okay. Please don't touch the panel. Can I get your name?\nUser: Maria Okafor.\nAI: Thanks, Maria. What's the best number to reach you?\nUser: 612-555-0142.\nAI: And the address?\nUser: 418 Larkspur Lane, Ridgeview.\nAI: Got it. I'm flagging this as an emergency for the on-call electrician, and someone will call you back as soon as possible. If it gets worse, call 911.\nUser: Okay, thank you.",
+      "messages": [
+        {
+          "role": "system",
+          "message": "(system prompt omitted from the example)",
+          "time": 0,
+          "secondsFromStart": 0
+        },
+        {
+          "role": "bot",
+          "message": "Thanks for calling Cavern Electrical. You've reached our after-hours line. I'm an automated assistant and this call is recorded so the team can follow up. What's going on tonight?",
+          "secondsFromStart": 1.0,
+          "duration": 12785
+        },
+        {
+          "role": "user",
+          "message": "Hi, yeah, there's a burning smell coming from our breaker panel in the garage. It's kind of a hot plastic smell.",
+          "secondsFromStart": 14.99,
+          "duration": 8000
+        },
+        {
+          "role": "bot",
+          "message": "Thanks for telling me. If you see smoke or flames, please leave the house and call 911 first. Is anyone in danger right now?",
+          "secondsFromStart": 24.19,
+          "duration": 8857
+        },
+        {
+          "role": "user",
+          "message": "No smoke that I can see, but the panel door feels warm and the smell is getting stronger.",
+          "secondsFromStart": 34.24,
+          "duration": 6357
+        },
+        {
+          "role": "bot",
+          "message": "Okay. Please don't touch the panel. Can I get your name?",
+          "secondsFromStart": 41.8,
+          "duration": 4000
+        },
+        {
+          "role": "user",
+          "message": "Maria Okafor.",
+          "secondsFromStart": 47.0,
+          "duration": 1500
+        },
+        {
+          "role": "bot",
+          "message": "Thanks, Maria. What's the best number to reach you?",
+          "secondsFromStart": 49.7,
+          "duration": 3642
+        },
+        {
+          "role": "user",
+          "message": "612-555-0142.",
+          "secondsFromStart": 54.54,
+          "duration": 1500
+        },
+        {
+          "role": "bot",
+          "message": "And the address?",
+          "secondsFromStart": 57.24,
+          "duration": 1500
+        },
+        {
+          "role": "user",
+          "message": "418 Larkspur Lane, Ridgeview.",
+          "secondsFromStart": 59.94,
+          "duration": 2071
+        },
+        {
+          "role": "bot",
+          "message": "Got it. I'm flagging this as an emergency for the on-call electrician, and someone will call you back as soon as possible. If it gets worse, call 911.",
+          "secondsFromStart": 63.21,
+          "duration": 10714
+        },
+        {
+          "role": "user",
+          "message": "Okay, thank you.",
+          "secondsFromStart": 75.13,
+          "duration": 1500
+        }
+      ],
+      "recordingUrl": "https://recordings.example.com/call-demo-0001-burning-panel.wav"
+    },
+    "analysis": {
+      "summary": "",
+      "structuredData": {
+        "caller_name": "Maria Okafor",
+        "callback_number": "612-555-0142",
+        "service_address": "418 Larkspur Lane, Ridgeview",
+        "problem": "Burning plastic smell from the breaker panel in the garage; panel door feels warm.",
+        "urgency": "emergency",
+        "emergency_signals": [
+          "burning smell",
+          "panel warm"
+        ]
+      }
+    }
+  }
+}

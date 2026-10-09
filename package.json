@@ -1,0 +1,21 @@
+{
+  "name": "after-hours-call-report",
+  "version": "0.1.0",
+  "description": "After-hours AI phone answering for a trades business: end-of-call webhook to emergency triage, LLM summary, owner SMS alert, CRM record and a morning digest email. n8n workflow plus a tested, dependency-free Node.js core.",
+  "license": "MIT",
+  "author": "Elwood (Jim) Birney",
+  "private": true,
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "demo": "node scripts/demo.js",
+    "mock": "node mock/server.js",
+    "send-calls": "node mock/send-call.js",
+    "build:workflow": "node scripts/build-workflow.js",
+    "check:workflow": "node scripts/build-workflow.js --check",
+    "check:secrets": "sh scripts/check-secrets.sh"
+  }
+}

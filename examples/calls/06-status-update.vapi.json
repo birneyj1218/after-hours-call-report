@@ -1,0 +1,9 @@
+{
+  "message": {
+    "type": "status-update",
+    "status": "in-progress",
+    "call": {
+      "id": "call-demo-0006-status"
+    }
+  }
+}

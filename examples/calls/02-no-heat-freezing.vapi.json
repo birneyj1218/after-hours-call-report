@@ -1,0 +1,107 @@
+{
+  "message": {
+    "type": "end-of-call-report",
+    "timestamp": "2026-01-17T07:38:49.000Z",
+    "endedReason": "customer-ended-call",
+    "call": {
+      "id": "call-demo-0002-no-heat",
+      "type": "inboundPhoneCall",
+      "startedAt": "2026-01-17T07:37:40.000Z",
+      "endedAt": "2026-01-17T07:38:49.000Z",
+      "customer": {
+        "number": "+16125550167"
+      }
+    },
+    "customer": {
+      "number": "+16125550167"
+    },
+    "phoneNumber": {
+      "number": "+16125550100",
+      "name": "Cavern Electrical after-hours line"
+    },
+    "startedAt": "2026-01-17T07:37:40.000Z",
+    "endedAt": "2026-01-17T07:38:49.000Z",
+    "durationSeconds": 69.3,
+    "artifact": {
+      "transcript": "AI: Thanks for calling Cavern Electrical. You've reached our after-hours line. I'm an automated assistant and this call is recorded so the team can follow up. What's going on tonight?\nUser: Our heat stopped working. We have electric baseboard heat and none of it is coming on.\nAI: I'm sorry, that's no fun at night. Is the power on in the rest of the house?\nUser: Yes, lights work. But it's 6 degrees outside and it's already 58 in here, and we have a newborn.\nAI: Understood, I'll mark this as a priority. Can I have your name and a callback number?\nUser: Tom Reyes, 612-555-0167.\nAI: Thanks, Tom. And where are you located?\nUser: It's 77 Juniper Court, unit B.\nAI: Thank you. I'm passing this to the on-call electrician now. In the meantime, keep doors closed and use safe, listed space heaters only if you have them.\nUser: Okay. Please hurry.",
+      "messages": [
+        {
+          "role": "system",
+          "message": "(system prompt omitted from the example)",
+          "time": 0,
+          "secondsFromStart": 0
+        },
+        {
+          "role": "bot",
+          "message": "Thanks for calling Cavern Electrical. You've reached our after-hours line. I'm an automated assistant and this call is recorded so the team can follow up. What's going on tonight?",
+          "secondsFromStart": 1.0,
+          "duration": 12785
+        },
+        {
+          "role": "user",
+          "message": "Our heat stopped working. We have electric baseboard heat and none of it is coming on.",
+          "secondsFromStart": 14.99,
+          "duration": 6142
+        },
+        {
+          "role": "bot",
+          "message": "I'm sorry, that's no fun at night. Is the power on in the rest of the house?",
+          "secondsFromStart": 22.33,
+          "duration": 5428
+        },
+        {
+          "role": "user",
+          "message": "Yes, lights work. But it's 6 degrees outside and it's already 58 in here, and we have a newborn.",
+          "secondsFromStart": 28.96,
+          "duration": 6857
+        },
+        {
+          "role": "bot",
+          "message": "Understood, I'll mark this as a priority. Can I have your name and a callback number?",
+          "secondsFromStart": 37.01,
+          "duration": 6071
+        },
+        {
+          "role": "user",
+          "message": "Tom Reyes, 612-555-0167.",
+          "secondsFromStart": 44.29,
+          "duration": 1714
+        },
+        {
+          "role": "bot",
+          "message": "Thanks, Tom. And where are you located?",
+          "secondsFromStart": 47.2,
+          "duration": 2785
+        },
+        {
+          "role": "user",
+          "message": "It's 77 Juniper Court, unit B.",
+          "secondsFromStart": 51.19,
+          "duration": 2142
+        },
+        {
+          "role": "bot",
+          "message": "Thank you. I'm passing this to the on-call electrician now. In the meantime, keep doors closed and use safe, listed space heaters only if you have them.",
+          "secondsFromStart": 54.53,
+          "duration": 10857
+        },
+        {
+          "role": "user",
+          "message": "Okay. Please hurry.",
+          "secondsFromStart": 66.59,
+          "duration": 1500
+        }
+      ],
+      "recordingUrl": "https://recordings.example.com/call-demo-0002-no-heat.wav"
+    },
+    "analysis": {
+      "summary": "",
+      "structuredData": {
+        "caller_name": "Tom Reyes",
+        "callback_number": "612-555-0167",
+        "problem": "Electric baseboard heat not working anywhere in the home.",
+        "urgency": "urgent"
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "event": "call.ended",
+  "provider": "generic",
+  "call_id": "call-demo-0003-kitchen-outlets",
+  "started_at": "2026-01-17T05:05:12Z",
+  "ended_at": "2026-01-17T05:07:01Z",
+  "from": "+1 (612) 555-0181",
+  "recording_url": "https://recordings.example.com/call-demo-0003-kitchen-outlets.mp3",
+  "transcript": [
+    {
+      "speaker": "assistant",
+      "text": "Thanks for calling Cavern Electrical. You've reached our after-hours line. I'm an automated assistant and this call is recorded so the team can follow up. What's going on tonight?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Hi. Two outlets on my kitchen counter stopped working this evening. I pressed the reset button on the GFCI but nothing happened."
+    },
+    {
+      "speaker": "assistant",
+      "text": "Thanks. Do you notice any burning smell, sparks or heat at the outlets?"
+    },
+    {
+      "speaker": "caller",
+      "text": "No sparks, no burning smell, nothing like that. It's not urgent, Monday is fine."
+    },
+    {
+      "speaker": "assistant",
+      "text": "Great. Can I get your name, number and address?"
+    },
+    {
+      "speaker": "caller",
+      "text": "Priya Lindqvist, 612-555-0181, 2090 Alder Street."
+    },
+    {
+      "speaker": "assistant",
+      "text": "Thanks, Priya. The office will call you Monday morning to set up a time."
+    },
+    {
+      "speaker": "caller",
+      "text": "Perfect, any time after 9 works."
+    }
+  ],
+  "fields": {
+    "caller_name": "Priya Lindqvist",
+    "callback_number": "612-555-0181",
+    "address": "2090 Alder Street",
+    "problem": "Two kitchen counter outlets dead; GFCI reset did not help.",
+    "preferred_callback": "Monday after 9 am"
+  }
+}

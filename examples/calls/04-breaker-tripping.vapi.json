@@ -1,0 +1,108 @@
+{
+  "message": {
+    "type": "end-of-call-report",
+    "timestamp": "2026-01-17T09:13:31.000Z",
+    "endedReason": "customer-ended-call",
+    "call": {
+      "id": "call-demo-0004-breaker-tripping",
+      "type": "inboundPhoneCall",
+      "startedAt": "2026-01-17T09:12:30.000Z",
+      "endedAt": "2026-01-17T09:13:31.000Z",
+      "customer": {
+        "number": "+16125550123"
+      }
+    },
+    "customer": {
+      "number": "+16125550123"
+    },
+    "phoneNumber": {
+      "number": "+16125550100",
+      "name": "Cavern Electrical after-hours line"
+    },
+    "startedAt": "2026-01-17T09:12:30.000Z",
+    "endedAt": "2026-01-17T09:13:31.000Z",
+    "durationSeconds": 60.7,
+    "artifact": {
+      "transcript": "AI: Thanks for calling Cavern Electrical. You've reached our after-hours line. I'm an automated assistant and this call is recorded so the team can follow up. What's going on tonight?\nUser: Half of the house lost power about an hour ago and the breaker keeps tripping when I reset it.\nAI: Okay. Any burning smell, sparks, or anything hot to the touch?\nUser: No, nothing like that. The furnace is on the other side, so we still have heat.\nAI: Good. Can I get your name and best number?\nUser: Gus Hartley. 612-555-0123.\nAI: And your address, Gus?\nUser: 5 Wren Hollow Road.\nAI: Thanks. Please leave that breaker off for now. I'll have the team call you first thing in the morning.\nUser: Sounds good, as early as possible please.",
+      "messages": [
+        {
+          "role": "system",
+          "message": "(system prompt omitted from the example)",
+          "time": 0,
+          "secondsFromStart": 0
+        },
+        {
+          "role": "bot",
+          "message": "Thanks for calling Cavern Electrical. You've reached our after-hours line. I'm an automated assistant and this call is recorded so the team can follow up. What's going on tonight?",
+          "secondsFromStart": 1.0,
+          "duration": 12785
+        },
+        {
+          "role": "user",
+          "message": "Half of the house lost power about an hour ago and the breaker keeps tripping when I reset it.",
+          "secondsFromStart": 14.99,
+          "duration": 6714
+        },
+        {
+          "role": "bot",
+          "message": "Okay. Any burning smell, sparks, or anything hot to the touch?",
+          "secondsFromStart": 22.9,
+          "duration": 4428
+        },
+        {
+          "role": "user",
+          "message": "No, nothing like that. The furnace is on the other side, so we still have heat.",
+          "secondsFromStart": 28.53,
+          "duration": 5642
+        },
+        {
+          "role": "bot",
+          "message": "Good. Can I get your name and best number?",
+          "secondsFromStart": 35.37,
+          "duration": 3000
+        },
+        {
+          "role": "user",
+          "message": "Gus Hartley. 612-555-0123.",
+          "secondsFromStart": 39.57,
+          "duration": 1857
+        },
+        {
+          "role": "bot",
+          "message": "And your address, Gus?",
+          "secondsFromStart": 42.63,
+          "duration": 1571
+        },
+        {
+          "role": "user",
+          "message": "5 Wren Hollow Road.",
+          "secondsFromStart": 45.4,
+          "duration": 1500
+        },
+        {
+          "role": "bot",
+          "message": "Thanks. Please leave that breaker off for now. I'll have the team call you first thing in the morning.",
+          "secondsFromStart": 48.1,
+          "duration": 7285
+        },
+        {
+          "role": "user",
+          "message": "Sounds good, as early as possible please.",
+          "secondsFromStart": 56.59,
+          "duration": 2928
+        }
+      ],
+      "recordingUrl": "https://recordings.example.com/call-demo-0004-breaker-tripping.wav"
+    },
+    "analysis": {
+      "summary": "",
+      "structuredData": {
+        "caller_name": "Gus Hartley",
+        "callback_number": "612-555-0123",
+        "service_address": "5 Wren Hollow Road",
+        "problem": "Half the house without power; breaker trips again on reset.",
+        "preferred_callback": "As early as possible"
+      }
+    }
+  }
+}

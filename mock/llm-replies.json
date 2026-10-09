@@ -1,0 +1,55 @@
+{
+  "call-demo-0001-burning-panel": {
+    "caller_name": "Maria Okafor",
+    "callback_number": "612-555-0142",
+    "service_address": "418 Larkspur Lane, Ridgeview",
+    "problem": "Burning plastic smell from the breaker panel in the garage. The panel door feels warm and the smell is getting stronger.",
+    "urgency": "emergency",
+    "urgency_reason": "Caller reports a burning smell from the panel and a warm panel door.",
+    "emergency_signals": [
+      "burning smell",
+      "panel door feels warm"
+    ],
+    "preferred_callback": null,
+    "summary": "Maria Okafor reported a hot plastic smell from the breaker panel in her garage, with the panel door warm to the touch. No smoke was visible. The assistant told her not to touch the panel and to call 911 if it gets worse."
+  },
+  "call-demo-0002-no-heat": {
+    "caller_name": "Tom Reyes",
+    "callback_number": "612-555-0167",
+    "service_address": "77 Juniper Court, unit B",
+    "problem": "Electric baseboard heat is not working anywhere in the home; lights still work.",
+    "urgency": "urgent",
+    "urgency_reason": "No heat at night; caller asked for a quick response.",
+    "emergency_signals": [
+      "6 degrees outside",
+      "newborn at home"
+    ],
+    "preferred_callback": null,
+    "summary": "Tom Reyes has no heat from his electric baseboard heaters while the rest of the power works. It is 6 degrees outside, 58 inside, and there is a newborn at home."
+  },
+  "call-demo-0003-kitchen-outlets": {
+    "caller_name": "Priya Lindqvist",
+    "callback_number": "612-555-0181",
+    "service_address": "2090 Alder Street",
+    "problem": "Two kitchen counter outlets stopped working; resetting the GFCI did not help.",
+    "urgency": "routine",
+    "urgency_reason": "Caller said it is not urgent and Monday is fine; no sparks or burning smell.",
+    "emergency_signals": [],
+    "preferred_callback": "Monday after 9 am",
+    "summary": "Priya Lindqvist has two dead kitchen counter outlets that did not come back after a GFCI reset. No signs of heat or burning. She is happy with a call Monday after 9 am."
+  },
+  "call-demo-0005-basement-flooding": {
+    "caller_name": "Lena Brandt",
+    "callback_number": "612-555-0159",
+    "service_address": "31 Quarry Ridge Drive",
+    "problem": "Basement flooding from snow melt, with water getting close to the electrical panel.",
+    "urgency": "emergency",
+    "urgency_reason": "Water is approaching the electrical panel.",
+    "emergency_signals": [
+      "basement flooding",
+      "water near the panel"
+    ],
+    "preferred_callback": null,
+    "summary": "Lena Brandt's basement is flooding from snow melt and the water is nearing the electrical panel. Everyone is upstairs and was told not to touch the panel or enter the water."
+  }
+}

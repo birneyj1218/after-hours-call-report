@@ -1,0 +1,26 @@
+# n8n only. The mock providers run on the host with Node (npm run mock) and n8n reaches
+# them via host.docker.internal. Ports bind to 127.0.0.1; put a TLS reverse proxy in front
+# before your voice provider can reach the webhook from the internet.
+services:
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:${N8N_VERSION:-2.42.6}
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:5678:5678"
+    env_file: .env
+    environment:
+      - N8N_ENCRYPTION_KEY=${N8N_ENCRYPTION_KEY}
+      - GENERIC_TIMEZONE=${GENERIC_TIMEZONE:-America/Chicago}
+      - TZ=${GENERIC_TIMEZONE:-America/Chicago}
+      # The Config node reads settings from $env, which n8n blocks by default.
+      - N8N_BLOCK_ENV_ACCESS_IN_NODE=false
+      - N8N_DIAGNOSTICS_ENABLED=false
+      - N8N_PERSONALIZATION_ENABLED=false
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - n8n_data:/home/node/.n8n
+      - ./n8n:/workflows:ro
+
+volumes:
+  n8n_data:
